@@ -12,6 +12,7 @@
 		4E1BBBA225AF5FDB000C8956 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BBBA125AF5FDB000C8956 /* ExploreView.swift */; };
 		4E1BBBA725AF603B000C8956 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BBBA625AF603B000C8956 /* ChatsView.swift */; };
 		4E1BBBAC25AF60AB000C8956 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BBBAB25AF60AB000C8956 /* ProfileView.swift */; };
+		4E22847125AF6FB20045A808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E22847025AF6FB20045A808 /* Images.xcassets */; };
 		4EFBF1AB25AE4B6600454BBB /* ProjectDevilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */; };
 		4EFBF1AD25AE4B6600454BBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AC25AE4B6600454BBB /* MainView.swift */; };
 		4EFBF1AF25AE4B6700454BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AE25AE4B6700454BBB /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		4E1BBBA125AF5FDB000C8956 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		4E1BBBA625AF603B000C8956 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
 		4E1BBBAB25AF60AB000C8956 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4E22847025AF6FB20045A808 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../Desktop/Images.xcassets; sourceTree = "<group>"; };
 		4EFBF1A725AE4B6600454BBB /* ProjectDevil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDevil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDevilApp.swift; sourceTree = "<group>"; };
 		4EFBF1AC25AE4B6600454BBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		4EFBF1A925AE4B6600454BBB /* ProjectDevil */ = {
 			isa = PBXGroup;
 			children = (
+				4E22847025AF6FB20045A808 /* Images.xcassets */,
 				4E1BBBB025AF6567000C8956 /* MainViews */,
 				4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */,
 				4EFBF1AE25AE4B6700454BBB /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E22847125AF6FB20045A808 /* Images.xcassets in Resources */,
 				4EFBF1B225AE4B6700454BBB /* Preview Assets.xcassets in Resources */,
 				4EFBF1AF25AE4B6700454BBB /* Assets.xcassets in Resources */,
 			);
