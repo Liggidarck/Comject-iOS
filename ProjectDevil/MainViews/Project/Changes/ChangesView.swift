@@ -15,7 +15,11 @@ struct ChangesView: View {
             
             HStack {
                 Spacer()
-                add_btn().padding(30)
+                NavigationLink(
+                    destination: AddChange(),
+                    label: {
+                        add_btn().padding(30)
+                    })
             }
         }
         .navigationTitle("Changes")

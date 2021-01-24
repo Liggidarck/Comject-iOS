@@ -12,9 +12,21 @@ struct ExploreView: View {
         NavigationView{
 
             ScrollView {
-                ExplorePost().padding()
+                NavigationLink(
+                    destination: ProjectOtherUser(),
+                    label: {
+                        ExplorePost().padding()
+                    })
             }
             .navigationTitle("Explore")
+            .navigationBarItems(trailing:
+                NavigationLink( destination: FiltersView(),
+                    label: {
+                    Image(systemName: "personalhotspot").imageScale(.large)
+                    }
+                )
+            )
+            
         }
     }
 }
@@ -33,6 +45,7 @@ struct ExplorePost: View {
                 
                 VStack(alignment: .leading) {
                     Text("George Filatov")
+                        .foregroundColor(.black)
                     Text("liggidarck")
                         .font(.caption2)
                         .foregroundColor(.gray)
@@ -74,21 +87,31 @@ struct ExplorePost: View {
 struct buttons_posts_explore: View {
     var body: some View{
         HStack {
-            Text("LIKE")
-                .padding(.horizontal, 30.0)
-                .padding(.vertical, 10.0)
-                .font(.system(size: 14))
-                .overlay(RoundedRectangle(cornerRadius: 3)
+            
+            HStack(spacing: -10.0) {
+                Image(systemName: "heart")
+                    .foregroundColor(.blue)
+                    .padding(5)
+                    .padding(.leading, 5)
+                Text("LIKE")
+                    .padding(.horizontal, 30.0)
+                    .padding(.vertical, 10.0)
+                    .font(.system(size: 14))
+            }.overlay(RoundedRectangle(cornerRadius: 3)
                         .stroke(Color.gray, lineWidth: 0.5))
             
             Spacer()
             
-            Text("COMMENT")
-                .padding(.horizontal, 30.0)
-                .padding(.vertical, 10.0)
-                .font(.system(size: 14))
-                .overlay(RoundedRectangle(cornerRadius: 3)
-                        .stroke(Color.gray, lineWidth: 0.5))
+            HStack(spacing: -10.0) {
+                Image(systemName: "message")
+                    .foregroundColor(.blue)
+                    .padding(5)
+                    .padding(.leading, 5)
+                Text("COMMENT")
+                    .padding(.horizontal, 30.0)
+                    .padding(.vertical, 10.0)
+                    .font(.system(size: 14))
+            }.overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.gray, lineWidth: 0.5))
         }
     }
     

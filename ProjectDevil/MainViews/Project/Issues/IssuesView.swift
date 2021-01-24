@@ -15,7 +15,11 @@ struct IssuesView: View {
             
             HStack {
                 Spacer()
-                add_btn().padding(30)
+                NavigationLink(
+                    destination: AddIssue(),
+                    label: {
+                        add_btn().padding(30)
+                    })
             }
             
         }

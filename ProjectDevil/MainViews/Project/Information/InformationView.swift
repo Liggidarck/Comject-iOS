@@ -11,12 +11,6 @@ struct InformationView: View {
     var body: some View {
         VStack {
             
-            Spacer()
-            
-            HStack {
-                Spacer()
-                add_btn().padding(30)
-            }
         }
         .navigationTitle("Information")
         

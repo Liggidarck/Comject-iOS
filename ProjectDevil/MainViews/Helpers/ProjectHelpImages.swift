@@ -55,6 +55,22 @@ struct InformationImage: View {
     }
 }
 
+struct TasksImage: View {
+    var body: some View{
+        ZStack {
+            RoundedRectangle(cornerRadius: 10.0)
+                .fill(Color.green)
+                .frame(width: 50, height: 50)
+            
+            Image(systemName: "tag.fill")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 20, height: 20, alignment: .center)
+                .foregroundColor(.white)
+        }
+    }
+}
+
 struct CommentImage: View {
     var body: some View{
         ZStack {
@@ -92,6 +108,7 @@ struct ProjectHelpImages_Previews: PreviewProvider {
         issuesImage()
         ChangesImage()
         InformationImage()
+        TasksImage()
         CommentImage()
         HastagImage()
     }

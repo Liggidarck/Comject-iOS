@@ -71,12 +71,16 @@ struct buttons_card: View {
             NavigationLink(
                 destination: PublishProjView(),
                 label: {
-                    Text("Publish")
-                        .padding(.horizontal, 30.0)
-                        .padding(.vertical, 10.0)
-                        .font(.system(size: 14))
-                        .overlay(RoundedRectangle(cornerRadius: 3)
-                                .stroke(Color.gray, lineWidth: 0.5))
+                    HStack(spacing: -10) {
+                        Image(systemName: "square.and.arrow.up")
+                            .foregroundColor(.blue)
+                            .padding(5)
+                            .padding(.leading, 5)
+                        Text("Publish")
+                            .padding(.horizontal, 30.0)
+                            .padding(.vertical, 10.0)
+                            .font(.system(size: 14))
+                    }.overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.gray, lineWidth: 0.5))
                 })
             
             Spacer()
@@ -84,12 +88,17 @@ struct buttons_card: View {
             NavigationLink(
                 destination: EditProjectView(),
                 label: {
-                    Text("Edit Project")
-                        .padding(.horizontal, 30.0)
-                        .padding(.vertical, 10.0)
-                        .font(.system(size: 14))
-                        .overlay(RoundedRectangle(cornerRadius: 3)
-                                .stroke(Color.gray, lineWidth: 0.5))
+                    HStack(spacing: -10) {
+                        Image(systemName: "pencil")
+                            .foregroundColor(.blue)
+                            .padding(5)
+                            .padding(.leading, 5)
+                        Text("Edit Project")
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10.0)
+                            .font(.system(size: 14))
+                    }.overlay(RoundedRectangle(cornerRadius: 3)
+                        .stroke(Color.gray, lineWidth: 0.5))
                 })
             
         }
