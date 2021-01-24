@@ -101,10 +101,12 @@ struct likes_and_comment:View {
         HStack(spacing: 10) {
             
             HStack {
-                Image("like_border")
+                Image(systemName: "heart.fill")
                     .resizable()
-                    .frame(width: 25, height: 25, alignment: .center)
                     .aspectRatio(contentMode: .fit)
+                    .frame(width: 25, height: 25, alignment: .center)
+                    .foregroundColor(.red)
+                    
                 Text("591")
                     .font(.caption)
                     .foregroundColor(.black)

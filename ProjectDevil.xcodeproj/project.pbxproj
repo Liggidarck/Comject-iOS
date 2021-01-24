@@ -12,6 +12,9 @@
 		4E03E01425BD7D9A0069A771 /* ChangesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03E01325BD7D9A0069A771 /* ChangesView.swift */; };
 		4E03E01925BD7DA30069A771 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03E01825BD7DA30069A771 /* InformationView.swift */; };
 		4E03E01E25BD7DAF0069A771 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03E01D25BD7DAF0069A771 /* CommentsView.swift */; };
+		4E03E02325BDB5B30069A771 /* MainTabsFollow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03E02225BDB5B30069A771 /* MainTabsFollow.swift */; };
+		4E03E02825BDB5ED0069A771 /* FollowingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03E02725BDB5ED0069A771 /* FollowingPage.swift */; };
+		4E03E02D25BDB5F50069A771 /* FollowersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03E02C25BDB5F50069A771 /* FollowersPage.swift */; };
 		4E1BBB9525AF5E5C000C8956 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BBB9425AF5E5C000C8956 /* HomeView.swift */; };
 		4E1BBB9A25AF5ED6000C8956 /* NotebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BBB9925AF5ED6000C8956 /* NotebookView.swift */; };
 		4E1BBBA225AF5FDB000C8956 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BBBA125AF5FDB000C8956 /* ExploreView.swift */; };
@@ -24,6 +27,7 @@
 		4E316B8F25B1A00F0090CFA4 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E316B8E25B1A00F0090CFA4 /* EditProfileView.swift */; };
 		4E3211E925B1B77E00E313B7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3211E825B1B77E00E313B7 /* SettingsView.swift */; };
 		4E3211EE25B1BAF300E313B7 /* AvaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3211ED25B1BAF300E313B7 /* AvaView.swift */; };
+		4EA6015925BDC4D900F24C66 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6015825BDC4D900F24C66 /* MessageView.swift */; };
 		4EFBF1AB25AE4B6600454BBB /* ProjectDevilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */; };
 		4EFBF1AD25AE4B6600454BBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AC25AE4B6600454BBB /* MainView.swift */; };
 		4EFBF1AF25AE4B6700454BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AE25AE4B6700454BBB /* Assets.xcassets */; };
@@ -55,6 +59,9 @@
 		4E03E01325BD7D9A0069A771 /* ChangesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesView.swift; sourceTree = "<group>"; };
 		4E03E01825BD7DA30069A771 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		4E03E01D25BD7DAF0069A771 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		4E03E02225BDB5B30069A771 /* MainTabsFollow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabsFollow.swift; sourceTree = "<group>"; };
+		4E03E02725BDB5ED0069A771 /* FollowingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingPage.swift; sourceTree = "<group>"; };
+		4E03E02C25BDB5F50069A771 /* FollowersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersPage.swift; sourceTree = "<group>"; };
 		4E1BBB9425AF5E5C000C8956 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4E1BBB9925AF5ED6000C8956 /* NotebookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookView.swift; sourceTree = "<group>"; };
 		4E1BBBA125AF5FDB000C8956 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 		4E316B8E25B1A00F0090CFA4 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		4E3211E825B1B77E00E313B7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4E3211ED25B1BAF300E313B7 /* AvaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaView.swift; sourceTree = "<group>"; };
+		4EA6015825BDC4D900F24C66 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		4EFBF1A725AE4B6600454BBB /* ProjectDevil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDevil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDevilApp.swift; sourceTree = "<group>"; };
 		4EFBF1AC25AE4B6600454BBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -145,17 +153,28 @@
 			path = Hastags;
 			sourceTree = "<group>";
 		};
+		4E03E03125BDB8F60069A771 /* FollowingFollowers */ = {
+			isa = PBXGroup;
+			children = (
+				4E03E02225BDB5B30069A771 /* MainTabsFollow.swift */,
+				4E03E02725BDB5ED0069A771 /* FollowingPage.swift */,
+				4E03E02C25BDB5F50069A771 /* FollowersPage.swift */,
+			);
+			path = FollowingFollowers;
+			sourceTree = "<group>";
+		};
 		4E1BBBB025AF6567000C8956 /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				4EA6015725BDC4C700F24C66 /* Message */,
 				4E2FBC0525BD676500F5A173 /* Helpers */,
 				4E2FBC0325BD673800F5A173 /* Project */,
 				4E2FBC0425BD674B00F5A173 /* Profile */,
+				4E03E03125BDB8F60069A771 /* FollowingFollowers */,
 				4EFBF1AC25AE4B6600454BBB /* MainView.swift */,
 				4E1BBB9425AF5E5C000C8956 /* HomeView.swift */,
 				4E1BBB9925AF5ED6000C8956 /* NotebookView.swift */,
 				4E1BBBA125AF5FDB000C8956 /* ExploreView.swift */,
-				4E1BBBA625AF603B000C8956 /* ChatsView.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -192,6 +211,15 @@
 				4E03E00125BD6C420069A771 /* ProjectHelpImages.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4EA6015725BDC4C700F24C66 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				4E1BBBA625AF603B000C8956 /* ChatsView.swift */,
+				4EA6015825BDC4D900F24C66 /* MessageView.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		4EFBF19E25AE4B6600454BBB = {
@@ -387,9 +415,13 @@
 				4E1BBBA725AF603B000C8956 /* ChatsView.swift in Sources */,
 				4E03E01E25BD7DAF0069A771 /* CommentsView.swift in Sources */,
 				4E03E00C25BD7D910069A771 /* IssuesView.swift in Sources */,
+				4E03E02325BDB5B30069A771 /* MainTabsFollow.swift in Sources */,
 				4E2FBBFA25BD65B500F5A173 /* PublishProjView.swift in Sources */,
+				4EA6015925BDC4D900F24C66 /* MessageView.swift in Sources */,
 				4E1BBB9525AF5E5C000C8956 /* HomeView.swift in Sources */,
 				4E316B8F25B1A00F0090CFA4 /* EditProfileView.swift in Sources */,
+				4E03E02D25BDB5F50069A771 /* FollowersPage.swift in Sources */,
+				4E03E02825BDB5ED0069A771 /* FollowingPage.swift in Sources */,
 				4E2FBBFF25BD65D000F5A173 /* EditProjectView.swift in Sources */,
 				4E3211E925B1B77E00E313B7 /* SettingsView.swift in Sources */,
 				4E03E00225BD6C420069A771 /* ProjectHelpImages.swift in Sources */,

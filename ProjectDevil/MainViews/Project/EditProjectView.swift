@@ -12,7 +12,6 @@ struct EditProjectView: View {
     @State var projectDescription: String = ""
     @State var prijectTopic: String = ""
     
-    
     var body: some View {
         ScrollView {
             VStack(spacing: 30.0) {

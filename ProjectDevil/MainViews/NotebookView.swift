@@ -16,9 +16,10 @@ struct NotebookView: View {
                 Spacer()
                 
                 VStack {
-                    Image("classBlack24dp")
+                    Image(systemName: "book.closed.fill")
                         .resizable()
-                        .frame(width: 120, height: 120, alignment: .center)
+                        .frame(width: 80, height: 100, alignment: .center)
+                        .foregroundColor(.gray)
                     
                     Text("Your notes will be here")
                 }

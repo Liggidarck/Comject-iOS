@@ -10,10 +10,12 @@ import SwiftUI
 struct MyProjectView: View {
     var body: some View {
         ScrollView {
-            TitelProject()
-            actionsWithProject().padding(.top, 10.0)
-            ProjectDescription()
-        }.padding()
+            VStack{
+                TitelProject()
+                actionsWithProject().padding(.top, 10.0)
+                ProjectDescription()
+            }.padding()
+        }
         .navigationTitle("My Project")
 
         
@@ -37,10 +39,12 @@ struct TitelProject: View {
             HStack(spacing: 10) {
                 
                 HStack {
-                    Image("like_border")
+                    Image(systemName: "heart.fill")
                         .resizable()
                         .frame(width: 25, height: 25, alignment: .center)
                         .aspectRatio(contentMode: .fit)
+                        .foregroundColor(.red)
+                        
                     Text("591")
                         .font(.caption)
                         .foregroundColor(.black)
@@ -58,31 +62,52 @@ struct actionsWithProject: View {
         VStack {
             Divider()
             
-            HStack {
-                issuesImage()
-                Text("Issues")
-                Spacer()
-            }
+            NavigationLink(
+                destination: IssuesView(),
+                label: {
+                    HStack {
+                        issuesImage()
+                        Text("Issues")
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                    
+                })
             
-            HStack {
-                ChangesImage()
-                Text("Changes")
-                Spacer()
-            }
-            
-            HStack {
-                InformationImage()
-                Text("Information From Teather")
-                Spacer()
-            }
+            NavigationLink(
+                destination: ChangesView(),
+                label: {
+                    HStack {
+                        ChangesImage()
+                        Text("Changes")
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+            })
+
+            NavigationLink(
+                destination: InformationView(),
+                label: {
+                    HStack {
+                        InformationImage()
+                        Text("Information From Teather")
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                })
             
             Divider()
             
-            HStack {
-                CommentImage()
-                Text("Comments")
-                Spacer()
-            }
+            NavigationLink(
+                destination: CommentsView(),
+                label: {
+                    HStack {
+                        CommentImage()
+                        Text("Comments")
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                })
             
             HStack {
                 HastagImage()

@@ -9,7 +9,19 @@ import SwiftUI
 
 struct IssuesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            Spacer()
+            
+            HStack {
+                Spacer()
+                add_btn().padding(30)
+            }
+            
+        }
+        .navigationTitle("Issues")
+
+        
     }
 }
 

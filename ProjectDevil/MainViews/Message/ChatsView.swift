@@ -39,7 +39,7 @@ struct itemChat: View {
             
             VStack(alignment: .leading) {
                 Text("George Filatov")
-                Text("liggidarck")
+                Text("You: Photo")
                     .font(.caption2)
                     .foregroundColor(.gray)
                 Divider()
