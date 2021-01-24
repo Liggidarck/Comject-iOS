@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var body: some View {
         NavigationView {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    MainProjectCard()
-                }
+            
+            ScrollView {
+                MainProjectCard().padding()
             }
             
             .navigationTitle("Home")
-            .padding()
         }
     }
 }
@@ -25,107 +24,98 @@ struct HomeView: View {
 struct MainProjectCard: View {
     var body: some View {
         VStack {
+            Image("6")
+                .resizable()
+                .aspectRatio(16/9, contentMode: .fit)
             
-            //Картинка проекта
             HStack {
-                Image("4")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .clipped()
-            }
-            
-            //Текст проекта
-            VStack(alignment: .leading) {
-                
-                HStack {
-                    Text("MY MAIN PROJECT")
-                        .font(.system(size: 14, weight: .light, design: .default))
-                    Spacer()
-                }
-                
-                Spacer()
-                
-                HStack {
-                    Text("Gradient Notes")
-                        .font(.system(size: 28, weight: .bold, design: .default))
-                    Spacer()
-                }
-                
-                Spacer()
-                
-                HStack {
+                VStack(alignment: .leading) {
+                    Text("MY MAIN PROJET")
+                        .font(.subheadline)
+                        .fontWeight(.light)
+                        .foregroundColor(.secondary)
+                    Text("Title goes here")
+                        .font(.title)
+                        .foregroundColor(.primary)
                     Text("Long default text for you project.  Long continuation of the description. Мой уровень английского не позволяет сделать мне более длинный текст на английском, поэтому продолжу на русском чтобы текст описания выглядил более объёмно.")
-                        .font(.system(size: 17, weight: .light, design: .default))
-                    Spacer()
-                }
-                
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .padding(.top, 10.0)
+                    Text("#Информатика #Программирование #IT")
+                        .font(.caption)
+                        .foregroundColor(.blue)
+                        .padding(.top, 3.0)
+                }.layoutPriority(100)
                 Spacer()
-                
-                HStack {
-                    Text("#Информатика #Программирование #IT #Мобильное приложение #что-то еще #длинноеслово ")
-                        .font(.system(size: 14, weight: .light, design: .default))
-                        .foregroundColor(Color.blue)
-                    Spacer()
-                }
-                
-            }
+            }.padding()
             
-            //Лайки комменты
-            VStack {
-                HStack(spacing: 20.0) {
-                    HStack {
-                        Image("like_border")
-                            .resizable()
-                            .frame(width: 25, height: 25, alignment: .center)
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Text("3.4k")
-                            .font(.system(size: 14, weight: .light, design: .default))
-                    }
-                    
-                    HStack {
-                        Image("chat")
-                            .resizable()
-                            .frame(width: 25, height: 25, alignment: .center)
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Text("1.3k Comments")
-                            .font(.system(size: 14, weight: .light, design: .default))
-                    }
-                    
-                    Spacer()
-                }
-                
-                //Кнопки
-                HStack{
-                    Spacer()
-
-                    Button(action: {
-                        print("Publish Clicked!") //Это типа логи
-                    }, label: {
-                        Text("Publish").font(.system(size: 17))
-                    })
-                    Spacer()
-
-                    Button(action: {
-                        print("Edit Project Clicked!") //Это типа логи
-                    }, label: {
-                        Text("Edit Project").font(.system(size: 17))
-                    })
-                    Spacer()
-                    
-                }.padding(.top)
-                
-            }
+            likes_and_comment().padding(.leading)
             
+            buttons_card().padding()
             
         }
-        
+        .cornerRadius(10)
+        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.sRGB, red:150/255, green: 150/255, blue: 150/255, opacity: 0.2), lineWidth: 1))
     }
 }
 
+struct buttons_card: View {
+    var body: some View {
+        HStack {
+            
+            Text("Publish")
+                .padding(.horizontal, 30.0)
+                .padding(.vertical, 10.0)
+                .font(.system(size: 14))
+                .overlay(RoundedRectangle(cornerRadius: 3)
+                        .stroke(Color.gray, lineWidth: 0.5))
+            
+            Spacer()
+            
+            Text("Edit Project")
+                .padding(.horizontal, 30.0)
+                .padding(.vertical, 10.0)
+                .font(.system(size: 14))
+                .overlay(RoundedRectangle(cornerRadius: 3)
+                        .stroke(Color.gray, lineWidth: 0.5))
+            
+        }
+    }
+}
+
+struct likes_and_comment:View {
+    var body: some View {
+        HStack(spacing: 10) {
+            
+            HStack {
+                Image("like_border")
+                    .resizable()
+                    .frame(width: 25, height: 25, alignment: .center)
+                    .aspectRatio(contentMode: .fit)
+                Text("591")
+                    .font(.caption)
+            }
+            
+            HStack {
+                Image("chat")
+                    .resizable()
+                    .frame(width: 25, height: 25, alignment: .center)
+                    .aspectRatio(contentMode: .fit)
+                
+                Text("341 Comment")
+                    .font(.caption)
+            }
+            
+            Spacer()
+            
+        }
+    }
+}
+
+#if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
+#endif
