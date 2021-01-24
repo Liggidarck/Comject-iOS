@@ -11,17 +11,21 @@ struct ChatsView: View {
     var body: some View {
         NavigationView{
             ScrollView {
-                itemChat()
+                NavigationLink(
+                    destination: MessageView(),
+                    label: {
+                        itemChat()
+                    })
                 itemChat()
                 itemChat()
             }
             .navigationTitle("Chats")
             .navigationBarItems(trailing:
-                Button(action: {
-                    print("New chat button pressed...")
-                }) {
+                NavigationLink( destination: AddChatView(),
+                    label: {
                     Image(systemName: "square.and.pencil").imageScale(.large)
-                }
+                    }
+                )
             )
             
         }
@@ -39,6 +43,7 @@ struct itemChat: View {
             
             VStack(alignment: .leading) {
                 Text("George Filatov")
+                    .foregroundColor(.black)
                 Text("You: Photo")
                     .font(.caption2)
                     .foregroundColor(.gray)

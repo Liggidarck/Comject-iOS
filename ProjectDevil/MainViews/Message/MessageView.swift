@@ -9,12 +9,36 @@ import SwiftUI
 
 struct MessageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TopMessage()
+    }
+}
+
+struct TopMessage: View {
+    var body: some View {
+        VStack {
+            HStack {
+                AvaView()
+                    .frame(width: 75, height: 75, alignment: .center)
+                    .padding(.horizontal, -30)
+                    .padding(.vertical, -30)
+                    .padding()
+                
+                VStack(alignment: .leading) {
+                    Text("George Filatov")
+                    Text("online")
+                        .font(.caption)
+                }
+                
+                Spacer()
+            }
+            Spacer()
+        }
     }
 }
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
         MessageView()
+        TopMessage()
     }
 }
