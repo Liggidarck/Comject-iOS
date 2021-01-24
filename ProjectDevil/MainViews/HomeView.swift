@@ -13,7 +13,11 @@ struct HomeView: View {
         NavigationView {
             
             ScrollView {
-                MainProjectCard().padding()
+                NavigationLink(
+                    destination: MyProjectView(),
+                    label: {
+                        MainProjectCard().padding()
+                    })
             }
             
             .navigationTitle("Home")
@@ -22,6 +26,7 @@ struct HomeView: View {
 }
 
 struct MainProjectCard: View {
+    
     var body: some View {
         VStack {
             Image("6")
@@ -63,21 +68,29 @@ struct buttons_card: View {
     var body: some View {
         HStack {
             
-            Text("Publish")
-                .padding(.horizontal, 30.0)
-                .padding(.vertical, 10.0)
-                .font(.system(size: 14))
-                .overlay(RoundedRectangle(cornerRadius: 3)
-                        .stroke(Color.gray, lineWidth: 0.5))
+            NavigationLink(
+                destination: PublishProjView(),
+                label: {
+                    Text("Publish")
+                        .padding(.horizontal, 30.0)
+                        .padding(.vertical, 10.0)
+                        .font(.system(size: 14))
+                        .overlay(RoundedRectangle(cornerRadius: 3)
+                                .stroke(Color.gray, lineWidth: 0.5))
+                })
             
             Spacer()
             
-            Text("Edit Project")
-                .padding(.horizontal, 30.0)
-                .padding(.vertical, 10.0)
-                .font(.system(size: 14))
-                .overlay(RoundedRectangle(cornerRadius: 3)
-                        .stroke(Color.gray, lineWidth: 0.5))
+            NavigationLink(
+                destination: EditProjectView(),
+                label: {
+                    Text("Edit Project")
+                        .padding(.horizontal, 30.0)
+                        .padding(.vertical, 10.0)
+                        .font(.system(size: 14))
+                        .overlay(RoundedRectangle(cornerRadius: 3)
+                                .stroke(Color.gray, lineWidth: 0.5))
+                })
             
         }
     }
@@ -94,6 +107,7 @@ struct likes_and_comment:View {
                     .aspectRatio(contentMode: .fit)
                 Text("591")
                     .font(.caption)
+                    .foregroundColor(.black)
             }
             
             HStack {
@@ -104,6 +118,8 @@ struct likes_and_comment:View {
                 
                 Text("341 Comment")
                     .font(.caption)
+                    .foregroundColor(.black)
+
             }
             
             Spacer()
@@ -116,6 +132,7 @@ struct likes_and_comment:View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+        MainProjectCard()
     }
 }
 #endif

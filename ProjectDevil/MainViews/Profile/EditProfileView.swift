@@ -11,9 +11,8 @@ struct EditProfileView: View {
     var body: some View {
         VStack{
             
-            
-            
-        }.navigationTitle("Edit Profile")
+        }
+        .navigationTitle("Edit Profile")
     }
 }
 
