@@ -83,7 +83,11 @@ struct ProfileView: View {
                 
                 Divider().padding(.horizontal)
                 
-                CardProfile().padding()
+                NavigationLink(
+                    destination: MyProjectView(),
+                    label: {
+                        CardProfile().padding()
+                    })
             }
             .navigationTitle("Profile")
         }

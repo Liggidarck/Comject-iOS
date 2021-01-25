@@ -23,6 +23,7 @@
 		4E22847125AF6FB20045A808 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E22847025AF6FB20045A808 /* Images.xcassets */; };
 		4E2875E125BDFF2400B5420D /* AddIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2875E025BDFF2400B5420D /* AddIssue.swift */; };
 		4E2875E625BDFF2F00B5420D /* AddChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2875E525BDFF2F00B5420D /* AddChange.swift */; };
+		4E2875EF25BF27CD00B5420D /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2875EE25BF27CD00B5420D /* AddNote.swift */; };
 		4E2FBBF525BD658D00F5A173 /* MyProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBF425BD658D00F5A173 /* MyProjectView.swift */; };
 		4E2FBBFA25BD65B500F5A173 /* PublishProjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBF925BD65B500F5A173 /* PublishProjView.swift */; };
 		4E2FBBFF25BD65D000F5A173 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBFE25BD65D000F5A173 /* EditProjectView.swift */; };
@@ -76,6 +77,7 @@
 		4E22847025AF6FB20045A808 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../Desktop/Images.xcassets; sourceTree = "<group>"; };
 		4E2875E025BDFF2400B5420D /* AddIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIssue.swift; sourceTree = "<group>"; };
 		4E2875E525BDFF2F00B5420D /* AddChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChange.swift; sourceTree = "<group>"; };
+		4E2875EE25BF27CD00B5420D /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		4E2FBBF425BD658D00F5A173 /* MyProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectView.swift; sourceTree = "<group>"; };
 		4E2FBBF925BD65B500F5A173 /* PublishProjView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishProjView.swift; sourceTree = "<group>"; };
 		4E2FBBFE25BD65D000F5A173 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		4E1BBBB025AF6567000C8956 /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				4E2875EA25BF279C00B5420D /* Notebook */,
 				4E6B5FBD25BDFDD1002DBF6B /* Explore */,
 				4EA6015725BDC4C700F24C66 /* Message */,
 				4E2FBC0525BD676500F5A173 /* Helpers */,
@@ -188,10 +191,18 @@
 				4E03E03125BDB8F60069A771 /* FollowingFollowers */,
 				4EFBF1AC25AE4B6600454BBB /* MainView.swift */,
 				4E1BBB9425AF5E5C000C8956 /* HomeView.swift */,
-				4E1BBB9925AF5ED6000C8956 /* NotebookView.swift */,
 				4E6B5FB825BDF703002DBF6B /* ProjectOtherUser.swift */,
 			);
 			path = MainViews;
+			sourceTree = "<group>";
+		};
+		4E2875EA25BF279C00B5420D /* Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				4E1BBB9925AF5ED6000C8956 /* NotebookView.swift */,
+				4E2875EE25BF27CD00B5420D /* AddNote.swift */,
+			);
+			path = Notebook;
 			sourceTree = "<group>";
 		};
 		4E2FBC0325BD673800F5A173 /* Project */ = {
@@ -461,6 +472,7 @@
 				4EFBF1AD25AE4B6600454BBB /* MainView.swift in Sources */,
 				4EFBF1AB25AE4B6600454BBB /* ProjectDevilApp.swift in Sources */,
 				4E1BBBAC25AF60AB000C8956 /* ProfileView.swift in Sources */,
+				4E2875EF25BF27CD00B5420D /* AddNote.swift in Sources */,
 				4E1BBBA225AF5FDB000C8956 /* ExploreView.swift in Sources */,
 				4E03E01925BD7DA30069A771 /* InformationView.swift in Sources */,
 				4E2FBBF525BD658D00F5A173 /* MyProjectView.swift in Sources */,

@@ -87,31 +87,40 @@ struct ExplorePost: View {
 struct buttons_posts_explore: View {
     var body: some View{
         HStack {
-            
-            HStack(spacing: -10.0) {
-                Image(systemName: "heart")
-                    .foregroundColor(.blue)
-                    .padding(5)
-                    .padding(.leading, 5)
-                Text("LIKE")
-                    .padding(.horizontal, 30.0)
-                    .padding(.vertical, 10.0)
-                    .font(.system(size: 14))
+             
+            Button(action: {
+                
+            }) {
+                HStack(spacing: -10.0) {
+                    Image(systemName: "heart")
+                        .foregroundColor(.blue)
+                        .padding(5)
+                        .padding(.leading, 5)
+                    
+                    Text("LIKE")
+                        .padding(.horizontal, 30.0)
+                        .padding(.vertical, 10.0)
+                        .font(.system(size: 14))
+                }
             }.overlay(RoundedRectangle(cornerRadius: 3)
                         .stroke(Color.gray, lineWidth: 0.5))
             
             Spacer()
             
-            HStack(spacing: -10.0) {
-                Image(systemName: "message")
-                    .foregroundColor(.blue)
-                    .padding(5)
-                    .padding(.leading, 5)
-                Text("COMMENT")
-                    .padding(.horizontal, 30.0)
-                    .padding(.vertical, 10.0)
-                    .font(.system(size: 14))
-            }.overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.gray, lineWidth: 0.5))
+            NavigationLink(
+                destination: CommentsView(),
+                label: {
+                    HStack(spacing: -10.0) {
+                        Image(systemName: "message")
+                            .foregroundColor(.blue)
+                            .padding(5)
+                            .padding(.leading, 5)
+                        Text("COMMENT")
+                            .padding(.horizontal, 30.0)
+                            .padding(.vertical, 10.0)
+                            .font(.system(size: 14))
+                    }.overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.gray, lineWidth: 0.5))
+                })
         }
     }
     

@@ -28,7 +28,11 @@ struct NotebookView: View {
                 
                 HStack {
                     Spacer()
-                    add_btn().padding(30)
+                    NavigationLink(
+                        destination: AddNote(),
+                        label: {
+                            add_btn().padding(30)
+                        })
                 }
                 
                 
