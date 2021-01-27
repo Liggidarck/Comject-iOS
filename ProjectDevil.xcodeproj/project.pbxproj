@@ -35,6 +35,7 @@
 		4E6B5FBF25BDFDE5002DBF6B /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5FBE25BDFDE5002DBF6B /* FiltersView.swift */; };
 		4EA6015925BDC4D900F24C66 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6015825BDC4D900F24C66 /* MessageView.swift */; };
 		4EA6016125BDEB6000F24C66 /* AddChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6016025BDEB6000F24C66 /* AddChatView.swift */; };
+		4EDDE20A25C1F5300038278A /* TeacherMainVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDE20925C1F5300038278A /* TeacherMainVIew.swift */; };
 		4EFBF1AB25AE4B6600454BBB /* ProjectDevilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */; };
 		4EFBF1AD25AE4B6600454BBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AC25AE4B6600454BBB /* MainView.swift */; };
 		4EFBF1AF25AE4B6700454BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF1AE25AE4B6700454BBB /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		4E6B5FBE25BDFDE5002DBF6B /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		4EA6015825BDC4D900F24C66 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		4EA6016025BDEB6000F24C66 /* AddChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatView.swift; sourceTree = "<group>"; };
+		4EDDE20925C1F5300038278A /* TeacherMainVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherMainVIew.swift; sourceTree = "<group>"; };
 		4EFBF1A725AE4B6600454BBB /* ProjectDevil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDevil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDevilApp.swift; sourceTree = "<group>"; };
 		4EFBF1AC25AE4B6600454BBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				4EFBF1AC25AE4B6600454BBB /* MainView.swift */,
 				4E1BBB9425AF5E5C000C8956 /* HomeView.swift */,
 				4E6B5FB825BDF703002DBF6B /* ProjectOtherUser.swift */,
+				4EDDE20925C1F5300038278A /* TeacherMainVIew.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				4EFBF1AD25AE4B6600454BBB /* MainView.swift in Sources */,
 				4EFBF1AB25AE4B6600454BBB /* ProjectDevilApp.swift in Sources */,
 				4E1BBBAC25AF60AB000C8956 /* ProfileView.swift in Sources */,
+				4EDDE20A25C1F5300038278A /* TeacherMainVIew.swift in Sources */,
 				4E2875EF25BF27CD00B5420D /* AddNote.swift in Sources */,
 				4E1BBBA225AF5FDB000C8956 /* ExploreView.swift in Sources */,
 				4E03E01925BD7DA30069A771 /* InformationView.swift in Sources */,

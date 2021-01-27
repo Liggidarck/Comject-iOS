@@ -36,13 +36,19 @@ struct ExplorePost: View {
         VStack {
             
             HStack {
-                AvaNoBorder()
-                    .frame(width: 75, height: 75, alignment: .center)
-                    .padding(.horizontal, -30)
-                    .padding(.top, -20)
-                    .padding(.bottom, -30)
-                    .padding()
-                
+
+                NavigationLink(
+                    destination: ProfileView(),
+                    label: {
+                        AvaNoBorder()
+                            .frame(width: 75, height: 75, alignment: .center)
+                            .padding(.horizontal, -30)
+                            .padding(.top, -20)
+                            .padding(.bottom, -30)
+                            .padding()
+                        
+                    })
+                                        
                 VStack(alignment: .leading) {
                     Text("George Filatov")
                         .foregroundColor(.black)
