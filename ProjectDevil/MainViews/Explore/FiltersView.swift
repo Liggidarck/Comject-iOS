@@ -9,7 +9,56 @@ import SwiftUI
 
 struct FiltersView: View {
     var body: some View {
-        Text("Hello, Filters!")
+        ScrollView {
+            
+            VStack {
+                
+                
+                HStack {
+                    Text("Biology").padding(.horizontal)
+                    
+                    Spacer()
+                }
+                
+                Divider().padding(.horizontal)
+                
+                HStack {
+                    Text("Chemistry").padding(.horizontal)
+                    
+                    Spacer()
+                }
+                
+                Divider().padding(.horizontal)
+                
+                HStack {
+                    Text("Economics").padding(.horizontal)
+                    
+                    Spacer()
+                }
+                
+                Divider().padding(.horizontal)
+
+                HStack {
+                    Text("English").padding(.horizontal)
+                    
+                    Spacer()
+                }
+                
+                Divider().padding(.horizontal)
+
+                HStack {
+                    Text("IT").padding(.horizontal)
+                    
+                    Spacer()
+                }
+                
+                Divider().padding(.horizontal)
+
+                
+                
+            }
+            
+        }
     }
 }
 

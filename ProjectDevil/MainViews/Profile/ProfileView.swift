@@ -66,17 +66,17 @@ struct ProfileView: View {
                                         .stroke(Color.gray, lineWidth: 0.5))
                         })
                     
-                    Button(action: {
-                        //Вот сюда добавить нажание на кнопку
-                        print("Нажата кнопка Edit Profile в ProfileView")
-                    }, label: {
-                        Text("GENERAL INFO")
-                            .padding(.horizontal, 30)
-                            .padding(.vertical, 10.0)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 3)
-                                    .stroke(Color.gray, lineWidth: 0.5))
-                    })
+                    NavigationLink(
+                        destination: GeneralInfo(),
+                        label: {
+                            Text("GENERAL INFO")
+                                .padding(.horizontal, 30)
+                                .padding(.vertical, 10.0)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 3)
+                                        .stroke(Color.gray, lineWidth: 0.5))
+                        })
+                    
                     
                 }
                 .padding(.top)

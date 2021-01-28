@@ -109,11 +109,17 @@ struct actionsWithProject: View {
                     }
                 })
             
-            HStack {
-                HastagImage()
-                Text("Hastags")
-                Spacer()
-            }
+            NavigationLink(
+                destination: HastagView(),
+                label: {
+                    HStack {
+                        HastagImage()
+                        Text("Hastags")
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                    
+                })
             
             Divider()
             
