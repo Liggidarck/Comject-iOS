@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProjectOtherUser: View {
+    
+    @State var someText = "x"
+    
     var body: some View {
         ScrollView {
             VStack{
@@ -15,25 +18,20 @@ struct ProjectOtherUser: View {
                     destination: ProfileOtherUser(),
                     label: {
                         HStack {
-                            AvaNoBorder()
-                                .frame(width: 75, height: 75, alignment: .center)
-                                .padding(.horizontal, -30)
+                            AvaViewKate()
+                                .frame(width: 55, height: 75, alignment: .center)
+                                .padding(.horizontal, -20)
                                 .padding(.top, -20)
                                 .padding(.bottom, -30)
                                 .padding()
                             
                             VStack(alignment: .leading) {
-                                Text("George Filatov")
-                                    .foregroundColor(.black)
-                                Text("liggidarck")
-                                    .font(.caption2)
-                                    .foregroundColor(.gray)
+                                Text("Kate Sheptukhina").foregroundColor(.primary)
+                                Text("@kate_sheee").font(.caption2).foregroundColor(.secondary)
                             }.padding(.top, 10)
                             
                             VStack {
-                                Text("SUBSCRIBE")
-                                    .font(.caption2)
-                                    .foregroundColor(.blue)
+                                Text("SUBSCRIBE").font(.caption2).foregroundColor(.blue)
                             }.padding(.leading, 10).padding(.top, -3)
                              
                             
@@ -59,7 +57,7 @@ struct ProjectOtherUser: View {
                         HStack {
                             Image(systemName: "heart.fill")
                                 .resizable()
-                                .frame(width: 25, height: 25, alignment: .center)
+                                .frame(width: 22, height: 22, alignment: .center)
                                 .aspectRatio(contentMode: .fit)
                                 .foregroundColor(.red)
                                 
@@ -68,26 +66,36 @@ struct ProjectOtherUser: View {
                                 .foregroundColor(.black)
                         }
                     }
-                    
                 }
                 
                 HStack {
-                    Text("LIKE")
-                        .padding(.horizontal, 30.0)
-                        .padding(.vertical, 10.0)
-                        .font(.system(size: 14))
-                        .overlay(RoundedRectangle(cornerRadius: 3)
+                    HStack(spacing: -10) {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(.secondary)
+                            .padding(5)
+                            .padding(.leading, 5)
+                        Text("LIKE")
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10.0)
+                            .font(.system(size: 14))
+                            .foregroundColor(.primary)
+                    }.overlay(RoundedRectangle(cornerRadius: 3)
                                 .stroke(Color.gray, lineWidth: 0.5))
                     
                     Spacer()
                     
-                    Text("COMMENT")
-                        .padding(.horizontal, 30.0)
-                        .padding(.vertical, 10.0)
-                        .font(.system(size: 14))
-                        .overlay(RoundedRectangle(cornerRadius: 3)
+                    HStack(spacing: -10) {
+                        Image(systemName: "message")
+                            .foregroundColor(.secondary)
+                            .padding(5)
+                            .padding(.leading, 5)
+                        Text("COMMENT")
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10.0)
+                            .font(.system(size: 14))
+                            .foregroundColor(.primary)
+                    }.overlay(RoundedRectangle(cornerRadius: 3)
                                 .stroke(Color.gray, lineWidth: 0.5))
-                    
                 }
                 
                 ActionWithPostProject()
@@ -112,7 +120,7 @@ struct ActionWithPostProject: View {
                     HStack {
                         issuesImage()
                         Text("Issues")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                     
@@ -124,7 +132,7 @@ struct ActionWithPostProject: View {
                     HStack {
                         ChangesImage()
                         Text("Changes")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
             })
@@ -135,7 +143,7 @@ struct ActionWithPostProject: View {
                     HStack {
                         TasksImage()
                         Text("Tasks")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                 })
@@ -148,7 +156,7 @@ struct ActionWithPostProject: View {
                     HStack {
                         CommentImage()
                         Text("Comments")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                 })
@@ -156,6 +164,7 @@ struct ActionWithPostProject: View {
             HStack {
                 HastagImage()
                 Text("Hastags")
+                    .foregroundColor(.primary)
                 Spacer()
             }
             
@@ -168,6 +177,7 @@ struct ActionWithPostProject: View {
 struct ProjectOtherUser_Previews: PreviewProvider {
     static var previews: some View {
         ProjectOtherUser()
+            
         ActionWithPostProject()
     }
 }

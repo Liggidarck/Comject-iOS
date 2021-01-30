@@ -11,7 +11,7 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                Image("3")
+                Image("6")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
@@ -66,6 +66,8 @@ struct ProfileView: View {
                                         .stroke(Color.gray, lineWidth: 0.5))
                         })
                     
+                    Spacer()
+                    
                     NavigationLink(
                         destination: GeneralInfo(),
                         label: {
@@ -80,6 +82,7 @@ struct ProfileView: View {
                     
                 }
                 .padding(.top)
+                .padding(.horizontal)
                 
                 Divider().padding(.horizontal)
                 
@@ -98,7 +101,7 @@ struct ProfileView: View {
 struct CardProfile:View {
     var body: some View{
         VStack {
-            Image("6")
+            Image("3")
                 .resizable()
                 .aspectRatio(16/9, contentMode: .fit)
             
@@ -136,7 +139,10 @@ struct profile_data: View {
             }, label: {
                 VStack{
                     Text("4")
+                        .foregroundColor(.primary)
+                    
                     Text("Posts")
+                        .foregroundColor(.primary)
                 }
             })
 
@@ -146,7 +152,11 @@ struct profile_data: View {
             }, label: {
                 VStack{
                     Text("28")
+                        .foregroundColor(.primary)
+
                     Text("Followers")
+                        .foregroundColor(.primary)
+
                 }
             })
 
@@ -157,7 +167,11 @@ struct profile_data: View {
             }, label: {
                 VStack{
                     Text("98")
+                        .foregroundColor(.primary)
+
                     Text("Following")
+                        .foregroundColor(.primary)
+
                 }
             })
 
@@ -175,6 +189,7 @@ struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ProfileView()
+                
             CardProfile()
         }
     }

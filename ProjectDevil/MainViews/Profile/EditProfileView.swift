@@ -32,30 +32,85 @@ struct EditProfileView: View {
                     Spacer()
                 }
                 
-                VStack(spacing: 25.0) {
-                    TextField("Name", text: $nameUser)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                VStack(spacing: 30) {
+                    VStack {
+                        HStack {
+                            Text("Name")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your name...", text: $nameUser)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("Username", text: $username)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("Username")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your username", text: $username)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("Topic", text: $topic)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("Topic")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your topic", text: $topic)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("Email", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("Email")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your email", text: $email)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("City", text: $city)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("City")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your city", text: $city)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("School", text: $school)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("School")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your school", text: $school)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("Grade", text: $grade)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("Grade")
+                            Spacer()
+                        }
+                        TextField("Enter your grade", text: $grade)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
-                    TextField("Birthday", text: $birthday)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    VStack {
+                        HStack {
+                            Text("Birthday")
+                            Spacer()
+                        }
+                        
+                        TextField("Enter your birthday", text: $birthday)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                     
                 }.padding()
             }
@@ -66,13 +121,17 @@ struct EditProfileView: View {
                 Spacer()
             }.padding(.horizontal)
             
-            Text("CHANGE PASSWORD")
-                .frame(maxWidth: .infinity)
-                .frame(height: 45)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .font(.callout)
-                .padding()
+            NavigationLink(
+                destination: ChangePasswordView(),
+                label: {
+                    Text("CHANGE PASSWORD")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 45)
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .font(.callout)
+                        .padding()                    
+                })
             
         }
         .navigationTitle("Edit Profile")

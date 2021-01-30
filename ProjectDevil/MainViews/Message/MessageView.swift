@@ -17,7 +17,7 @@ struct TopMessage: View {
     var body: some View {
         VStack {
             HStack {
-                AvaView()
+                AvaNoBorder()
                     .frame(width: 75, height: 75, alignment: .center)
                     .padding(.horizontal, -30)
                     .padding(.vertical, -30)

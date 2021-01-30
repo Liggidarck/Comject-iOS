@@ -17,6 +17,33 @@ struct AvaView: View {
     }
 }
 
+struct AvaViewAnton: View {
+    var body: some View {
+        Image("anton_ava")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .clipShape(Circle())
+    }
+}
+
+struct AvaViewKate: View {
+    var body: some View {
+        Image("main_kate_ava")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .clipShape(Circle())
+    }
+}
+
+struct AvaViewFire: View {
+    var body: some View {
+        Image("ava_agamir")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .clipShape(Circle())
+    }
+}
+
 struct AvaNoBorder: View {
     var body: some View {
         Image("ava_me")
@@ -28,6 +55,7 @@ struct AvaNoBorder: View {
 
 struct AvaView_Previews: PreviewProvider {
     static var previews: some View {
+        AvaViewAnton()
         AvaView()
     }
 }

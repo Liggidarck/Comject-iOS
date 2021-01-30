@@ -14,10 +14,11 @@ struct ChatsView: View {
                 NavigationLink(
                     destination: MessageView(),
                     label: {
-                        itemChat()
+                        itemChatMe()
                     })
-                itemChat()
-                itemChat()
+                
+                itemChatKate()
+                itemChatFire()
             }
             .navigationTitle("Chats")
             .navigationBarItems(trailing:
@@ -32,21 +33,73 @@ struct ChatsView: View {
     }
 }
 
-struct itemChat: View {
+struct itemChatMe: View {
     var body: some View {
         HStack {
             AvaNoBorder()
-                .frame(width: 85, height: 85, alignment: .center)
+                .frame(width: 80, height: 85, alignment: .center)
                 .padding(.horizontal, -30.0)
                 .padding(.vertical, -30.0)
                 .padding()
             
             VStack(alignment: .leading) {
-                Text("George Filatov")
-                    .foregroundColor(.black)
-                Text("You: Photo")
+                Text("George Filatov").foregroundColor(.primary)
+                Text("You: Photo").font(.caption2).foregroundColor(.secondary)
+                Divider()
+            }
+            Spacer()
+        }
+        .padding(.vertical, 4)
+        .padding(.leading, 5.0)
+        
+        
+    }
+}
+
+
+struct itemChatKate: View {
+    var body: some View {
+        HStack {
+            AvaViewKate()
+                .frame(width: 50, height: 85, alignment: .center)
+                .padding(.horizontal, -13.0)
+                .padding(.vertical, -30.0)
+                .padding()
+            
+            VStack(alignment: .leading) {
+                Text("Kate Sheptukhina")
+                    .foregroundColor(.primary)
+                Text("Ok")
                     .font(.caption2)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                Divider()
+            }
+        
+            
+            Spacer()
+        }
+        .padding(.vertical, 4)
+        .padding(.leading, 5.0)
+        
+        
+    }
+}
+
+struct itemChatFire: View {
+    var body: some View {
+        HStack {
+            AvaViewFire()
+                .frame(width: 50, height: 85, alignment: .center)
+                .padding(.horizontal, -13.0)
+                .padding(.vertical, -30.0)
+                .padding()
+            
+            VStack(alignment: .leading) {
+                Text("Fire Owl")
+                    .foregroundColor(.primary)
+                Text("You: Yes")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
                 Divider()
             }
         
@@ -63,6 +116,5 @@ struct itemChat: View {
 struct ChatsView_Previews: PreviewProvider {
     static var previews: some View {
         ChatsView()
-        itemChat()
     }
 }

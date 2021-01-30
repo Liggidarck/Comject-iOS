@@ -26,13 +26,15 @@
 		4E2875EF25BF27CD00B5420D /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2875EE25BF27CD00B5420D /* AddNote.swift */; };
 		4E2FBBF525BD658D00F5A173 /* MyProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBF425BD658D00F5A173 /* MyProjectView.swift */; };
 		4E2FBBFA25BD65B500F5A173 /* PublishProjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBF925BD65B500F5A173 /* PublishProjView.swift */; };
-		4E2FBBFF25BD65D000F5A173 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBFE25BD65D000F5A173 /* EditProjectView.swift */; };
+		4E2FBBFF25BD65D000F5A173 /* EditProjectViewPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBBFE25BD65D000F5A173 /* EditProjectViewPage1.swift */; };
 		4E316B8F25B1A00F0090CFA4 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E316B8E25B1A00F0090CFA4 /* EditProfileView.swift */; };
 		4E3211E925B1B77E00E313B7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3211E825B1B77E00E313B7 /* SettingsView.swift */; };
 		4E3211EE25B1BAF300E313B7 /* AvaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3211ED25B1BAF300E313B7 /* AvaView.swift */; };
+		4E3FBDB725C4AAFD00C5301D /* EditProjectViewPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3FBDB625C4AAFD00C5301D /* EditProjectViewPage2.swift */; };
 		4E6B5FB425BDF159002DBF6B /* ProfileOtherUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5FB325BDF159002DBF6B /* ProfileOtherUser.swift */; };
 		4E6B5FB925BDF703002DBF6B /* ProjectOtherUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5FB825BDF703002DBF6B /* ProjectOtherUser.swift */; };
 		4E6B5FBF25BDFDE5002DBF6B /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5FBE25BDFDE5002DBF6B /* FiltersView.swift */; };
+		4E81BECD25C4B6400013F264 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81BECC25C4B6400013F264 /* ChangePasswordView.swift */; };
 		4E8E459E25C3085A00E8C5B8 /* GeneralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E459D25C3085A00E8C5B8 /* GeneralInfo.swift */; };
 		4E8E45A325C3283300E8C5B8 /* HastagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E45A225C3283300E8C5B8 /* HastagView.swift */; };
 		4EA6015925BDC4D900F24C66 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6015825BDC4D900F24C66 /* MessageView.swift */; };
@@ -83,28 +85,30 @@
 		4E2875EE25BF27CD00B5420D /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		4E2FBBF425BD658D00F5A173 /* MyProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectView.swift; sourceTree = "<group>"; };
 		4E2FBBF925BD65B500F5A173 /* PublishProjView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishProjView.swift; sourceTree = "<group>"; };
-		4E2FBBFE25BD65D000F5A173 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		4E2FBBFE25BD65D000F5A173 /* EditProjectViewPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewPage1.swift; sourceTree = "<group>"; };
 		4E316B8E25B1A00F0090CFA4 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		4E3211E825B1B77E00E313B7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4E3211ED25B1BAF300E313B7 /* AvaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaView.swift; sourceTree = "<group>"; };
+		4E3FBDB625C4AAFD00C5301D /* EditProjectViewPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewPage2.swift; sourceTree = "<group>"; };
 		4E6B5FB325BDF159002DBF6B /* ProfileOtherUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOtherUser.swift; sourceTree = "<group>"; };
 		4E6B5FB825BDF703002DBF6B /* ProjectOtherUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOtherUser.swift; sourceTree = "<group>"; };
 		4E6B5FBE25BDFDE5002DBF6B /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		4E81BECC25C4B6400013F264 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		4E8E459D25C3085A00E8C5B8 /* GeneralInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfo.swift; sourceTree = "<group>"; };
 		4E8E45A225C3283300E8C5B8 /* HastagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastagView.swift; sourceTree = "<group>"; };
 		4EA6015825BDC4D900F24C66 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		4EA6016025BDEB6000F24C66 /* AddChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatView.swift; sourceTree = "<group>"; };
 		4EDDE20925C1F5300038278A /* TeacherMainVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherMainVIew.swift; sourceTree = "<group>"; };
-		4EFBF1A725AE4B6600454BBB /* ProjectDevil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDevil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFBF1A725AE4B6600454BBB /* Comject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFBF1AA25AE4B6600454BBB /* ProjectDevilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDevilApp.swift; sourceTree = "<group>"; };
 		4EFBF1AC25AE4B6600454BBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4EFBF1AE25AE4B6700454BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EFBF1B125AE4B6700454BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EFBF1B325AE4B6700454BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EFBF1B825AE4B6700454BBB /* ProjectDevilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectDevilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFBF1B825AE4B6700454BBB /* ComjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFBF1BC25AE4B6700454BBB /* ProjectDevilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDevilTests.swift; sourceTree = "<group>"; };
 		4EFBF1BE25AE4B6700454BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EFBF1C325AE4B6700454BBB /* ProjectDevilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectDevilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFBF1C325AE4B6700454BBB /* ComjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFBF1C725AE4B6700454BBB /* ProjectDevilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDevilUITests.swift; sourceTree = "<group>"; };
 		4EFBF1C925AE4B6700454BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,7 +202,6 @@
 				4E03E03125BDB8F60069A771 /* FollowingFollowers */,
 				4EFBF1AC25AE4B6600454BBB /* MainView.swift */,
 				4E1BBB9425AF5E5C000C8956 /* HomeView.swift */,
-				4E6B5FB825BDF703002DBF6B /* ProjectOtherUser.swift */,
 				4EDDE20925C1F5300038278A /* TeacherMainVIew.swift */,
 			);
 			path = MainViews;
@@ -216,6 +219,7 @@
 		4E2FBC0325BD673800F5A173 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				4E3FBDB225C4A72F00C5301D /* EditProject */,
 				4E03E00A25BD7D750069A771 /* Hastags */,
 				4E03E00925BD7D6B0069A771 /* Comments */,
 				4E03E00825BD7D630069A771 /* Information */,
@@ -223,7 +227,7 @@
 				4E03E00625BD7D570069A771 /* Issues */,
 				4E2FBBF925BD65B500F5A173 /* PublishProjView.swift */,
 				4E2FBBF425BD658D00F5A173 /* MyProjectView.swift */,
-				4E2FBBFE25BD65D000F5A173 /* EditProjectView.swift */,
+				4E6B5FB825BDF703002DBF6B /* ProjectOtherUser.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -236,6 +240,7 @@
 				4E3211E825B1B77E00E313B7 /* SettingsView.swift */,
 				4E6B5FB325BDF159002DBF6B /* ProfileOtherUser.swift */,
 				4E8E459D25C3085A00E8C5B8 /* GeneralInfo.swift */,
+				4E81BECC25C4B6400013F264 /* ChangePasswordView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -247,6 +252,15 @@
 				4E03E00125BD6C420069A771 /* ProjectHelpImages.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4E3FBDB225C4A72F00C5301D /* EditProject */ = {
+			isa = PBXGroup;
+			children = (
+				4E2FBBFE25BD65D000F5A173 /* EditProjectViewPage1.swift */,
+				4E3FBDB625C4AAFD00C5301D /* EditProjectViewPage2.swift */,
+			);
+			path = EditProject;
 			sourceTree = "<group>";
 		};
 		4E6B5FBD25BDFDD1002DBF6B /* Explore */ = {
@@ -281,9 +295,9 @@
 		4EFBF1A825AE4B6600454BBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EFBF1A725AE4B6600454BBB /* ProjectDevil.app */,
-				4EFBF1B825AE4B6700454BBB /* ProjectDevilTests.xctest */,
-				4EFBF1C325AE4B6700454BBB /* ProjectDevilUITests.xctest */,
+				4EFBF1A725AE4B6600454BBB /* Comject.app */,
+				4EFBF1B825AE4B6700454BBB /* ComjectTests.xctest */,
+				4EFBF1C325AE4B6700454BBB /* ComjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -330,9 +344,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EFBF1A625AE4B6600454BBB /* ProjectDevil */ = {
+		4EFBF1A625AE4B6600454BBB /* Comject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EFBF1CC25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ProjectDevil" */;
+			buildConfigurationList = 4EFBF1CC25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "Comject" */;
 			buildPhases = (
 				4EFBF1A325AE4B6600454BBB /* Sources */,
 				4EFBF1A425AE4B6600454BBB /* Frameworks */,
@@ -342,14 +356,14 @@
 			);
 			dependencies = (
 			);
-			name = ProjectDevil;
+			name = Comject;
 			productName = ProjectDevil;
-			productReference = 4EFBF1A725AE4B6600454BBB /* ProjectDevil.app */;
+			productReference = 4EFBF1A725AE4B6600454BBB /* Comject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EFBF1B725AE4B6700454BBB /* ProjectDevilTests */ = {
+		4EFBF1B725AE4B6700454BBB /* ComjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EFBF1CF25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ProjectDevilTests" */;
+			buildConfigurationList = 4EFBF1CF25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ComjectTests" */;
 			buildPhases = (
 				4EFBF1B425AE4B6700454BBB /* Sources */,
 				4EFBF1B525AE4B6700454BBB /* Frameworks */,
@@ -360,14 +374,14 @@
 			dependencies = (
 				4EFBF1BA25AE4B6700454BBB /* PBXTargetDependency */,
 			);
-			name = ProjectDevilTests;
+			name = ComjectTests;
 			productName = ProjectDevilTests;
-			productReference = 4EFBF1B825AE4B6700454BBB /* ProjectDevilTests.xctest */;
+			productReference = 4EFBF1B825AE4B6700454BBB /* ComjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4EFBF1C225AE4B6700454BBB /* ProjectDevilUITests */ = {
+		4EFBF1C225AE4B6700454BBB /* ComjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EFBF1D225AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ProjectDevilUITests" */;
+			buildConfigurationList = 4EFBF1D225AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ComjectUITests" */;
 			buildPhases = (
 				4EFBF1BF25AE4B6700454BBB /* Sources */,
 				4EFBF1C025AE4B6700454BBB /* Frameworks */,
@@ -378,9 +392,9 @@
 			dependencies = (
 				4EFBF1C525AE4B6700454BBB /* PBXTargetDependency */,
 			);
-			name = ProjectDevilUITests;
+			name = ComjectUITests;
 			productName = ProjectDevilUITests;
-			productReference = 4EFBF1C325AE4B6700454BBB /* ProjectDevilUITests.xctest */;
+			productReference = 4EFBF1C325AE4B6700454BBB /* ComjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +419,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EFBF1A225AE4B6600454BBB /* Build configuration list for PBXProject "ProjectDevil" */;
+			buildConfigurationList = 4EFBF1A225AE4B6600454BBB /* Build configuration list for PBXProject "Comject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -418,9 +432,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EFBF1A625AE4B6600454BBB /* ProjectDevil */,
-				4EFBF1B725AE4B6700454BBB /* ProjectDevilTests */,
-				4EFBF1C225AE4B6700454BBB /* ProjectDevilUITests */,
+				4EFBF1A625AE4B6600454BBB /* Comject */,
+				4EFBF1B725AE4B6700454BBB /* ComjectTests */,
+				4EFBF1C225AE4B6700454BBB /* ComjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -460,6 +474,7 @@
 				4E6B5FBF25BDFDE5002DBF6B /* FiltersView.swift in Sources */,
 				4E8E459E25C3085A00E8C5B8 /* GeneralInfo.swift in Sources */,
 				4E03E01425BD7D9A0069A771 /* ChangesView.swift in Sources */,
+				4E81BECD25C4B6400013F264 /* ChangePasswordView.swift in Sources */,
 				4E1BBBA725AF603B000C8956 /* ChatsView.swift in Sources */,
 				4EA6016125BDEB6000F24C66 /* AddChatView.swift in Sources */,
 				4E03E01E25BD7DAF0069A771 /* CommentsView.swift in Sources */,
@@ -475,7 +490,8 @@
 				4E6B5FB425BDF159002DBF6B /* ProfileOtherUser.swift in Sources */,
 				4E6B5FB925BDF703002DBF6B /* ProjectOtherUser.swift in Sources */,
 				4E03E02825BDB5ED0069A771 /* FollowingPage.swift in Sources */,
-				4E2FBBFF25BD65D000F5A173 /* EditProjectView.swift in Sources */,
+				4E3FBDB725C4AAFD00C5301D /* EditProjectViewPage2.swift in Sources */,
+				4E2FBBFF25BD65D000F5A173 /* EditProjectViewPage1.swift in Sources */,
 				4E3211E925B1B77E00E313B7 /* SettingsView.swift in Sources */,
 				4E03E00225BD6C420069A771 /* ProjectHelpImages.swift in Sources */,
 				4E1BBB9A25AF5ED6000C8956 /* NotebookView.swift in Sources */,
@@ -513,12 +529,12 @@
 /* Begin PBXTargetDependency section */
 		4EFBF1BA25AE4B6700454BBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EFBF1A625AE4B6600454BBB /* ProjectDevil */;
+			target = 4EFBF1A625AE4B6600454BBB /* Comject */;
 			targetProxy = 4EFBF1B925AE4B6700454BBB /* PBXContainerItemProxy */;
 		};
 		4EFBF1C525AE4B6700454BBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EFBF1A625AE4B6600454BBB /* ProjectDevil */;
+			target = 4EFBF1A625AE4B6600454BBB /* Comject */;
 			targetProxy = 4EFBF1C425AE4B6700454BBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -645,9 +661,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectDevil/Preview Content\"";
-				DEVELOPMENT_TEAM = 4PHFKKTRDT;
+				DEVELOPMENT_TEAM = T2N9JVCPY5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProjectDevil/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -655,8 +672,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = george.ProjectDevil;
+				PRODUCT_BUNDLE_IDENTIFIER = project.comject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,9 +685,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectDevil/Preview Content\"";
-				DEVELOPMENT_TEAM = 4PHFKKTRDT;
+				DEVELOPMENT_TEAM = T2N9JVCPY5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProjectDevil/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -677,8 +696,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = george.ProjectDevil;
+				PRODUCT_BUNDLE_IDENTIFIER = project.comject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -702,7 +722,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectDevil.app/ProjectDevil";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comject.app/Comject";
 			};
 			name = Debug;
 		};
@@ -724,7 +744,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectDevil.app/ProjectDevil";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comject.app/Comject";
 			};
 			name = Release;
 		};
@@ -771,7 +791,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EFBF1A225AE4B6600454BBB /* Build configuration list for PBXProject "ProjectDevil" */ = {
+		4EFBF1A225AE4B6600454BBB /* Build configuration list for PBXProject "Comject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EFBF1CA25AE4B6700454BBB /* Debug */,
@@ -780,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EFBF1CC25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ProjectDevil" */ = {
+		4EFBF1CC25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "Comject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EFBF1CD25AE4B6700454BBB /* Debug */,
@@ -789,7 +809,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EFBF1CF25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ProjectDevilTests" */ = {
+		4EFBF1CF25AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ComjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EFBF1D025AE4B6700454BBB /* Debug */,
@@ -798,7 +818,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EFBF1D225AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ProjectDevilUITests" */ = {
+		4EFBF1D225AE4B6700454BBB /* Build configuration list for PBXNativeTarget "ComjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EFBF1D325AE4B6700454BBB /* Debug */,

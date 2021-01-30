@@ -17,6 +17,13 @@ struct ExploreView: View {
                     label: {
                         ExplorePost().padding()
                     })
+                
+                NavigationLink(
+                    destination: ProjectOtherUser(),
+                    label: {
+                        ExplorePost().padding()
+                    })
+                
             }
             .navigationTitle("Explore")
             .navigationBarItems(trailing:
@@ -40,9 +47,9 @@ struct ExplorePost: View {
                 NavigationLink(
                     destination: ProfileView(),
                     label: {
-                        AvaNoBorder()
-                            .frame(width: 75, height: 75, alignment: .center)
-                            .padding(.horizontal, -30)
+                        AvaViewKate()
+                            .frame(width: 45, height: 75, alignment: .center)
+                            .padding(.horizontal, -20)
                             .padding(.top, -20)
                             .padding(.bottom, -30)
                             .padding()
@@ -50,17 +57,17 @@ struct ExplorePost: View {
                     })
                                         
                 VStack(alignment: .leading) {
-                    Text("George Filatov")
-                        .foregroundColor(.black)
-                    Text("liggidarck")
+                    Text("Kate Sheptukhina")
+                        .foregroundColor(.primary)
+                    Text("@kate_sheee")
                         .font(.caption2)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.secondary)
                 }.padding(.top, 10)
                 
                 Spacer()
             } .padding(.leading)
             
-            Image("6")
+            Image("2")
                 .resizable()
                 .aspectRatio(16/9, contentMode: .fit)
             
@@ -99,7 +106,7 @@ struct buttons_posts_explore: View {
             }) {
                 HStack(spacing: -10.0) {
                     Image(systemName: "heart")
-                        .foregroundColor(.blue)
+                        .foregroundColor(.secondary)
                         .padding(5)
                         .padding(.leading, 5)
                     
@@ -107,6 +114,7 @@ struct buttons_posts_explore: View {
                         .padding(.horizontal, 30.0)
                         .padding(.vertical, 10.0)
                         .font(.system(size: 14))
+                        .foregroundColor(.secondary)
                 }
             }.overlay(RoundedRectangle(cornerRadius: 3)
                         .stroke(Color.gray, lineWidth: 0.5))
@@ -118,13 +126,15 @@ struct buttons_posts_explore: View {
                 label: {
                     HStack(spacing: -10.0) {
                         Image(systemName: "message")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.secondary)
                             .padding(5)
                             .padding(.leading, 5)
+                        
                         Text("COMMENT")
                             .padding(.horizontal, 30.0)
                             .padding(.vertical, 10.0)
                             .font(.system(size: 14))
+                            .foregroundColor(.secondary)
                     }.overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.gray, lineWidth: 0.5))
                 })
         }

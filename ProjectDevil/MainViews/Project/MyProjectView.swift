@@ -41,7 +41,7 @@ struct TitelProject: View {
                 HStack {
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .frame(width: 25, height: 25, alignment: .center)
+                        .frame(width: 22, height: 22, alignment: .center)
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(.red)
                         
@@ -68,7 +68,7 @@ struct actionsWithProject: View {
                     HStack {
                         issuesImage()
                         Text("Issues")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                     
@@ -80,7 +80,7 @@ struct actionsWithProject: View {
                     HStack {
                         ChangesImage()
                         Text("Changes")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
             })
@@ -91,7 +91,7 @@ struct actionsWithProject: View {
                     HStack {
                         InformationImage()
                         Text("Information From Teather")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                 })
@@ -104,7 +104,7 @@ struct actionsWithProject: View {
                     HStack {
                         CommentImage()
                         Text("Comments")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                 })
@@ -115,7 +115,7 @@ struct actionsWithProject: View {
                     HStack {
                         HastagImage()
                         Text("Hastags")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Spacer()
                     }
                     
@@ -155,6 +155,7 @@ struct ProjectDescription: View {
 struct MyProjectView_Previews: PreviewProvider {
     static var previews: some View {
         MyProjectView()
+            .preferredColorScheme(.dark)
         TitelProject()
         actionsWithProject()
         ProjectDescription()

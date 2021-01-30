@@ -16,30 +16,27 @@ struct NotebookView: View {
                 Spacer()
                 
                 VStack {
-                    Image(systemName: "book.closed.fill")
+                    Image(systemName: "text.book.closed")
                         .resizable()
                         .frame(width: 80, height: 100, alignment: .center)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.secondary)
                     
                     Text("Your notes will be here")
+                        .padding(.top)
                 }
                 
                 Spacer()
                 
-                HStack {
-                    Spacer()
-                    NavigationLink(
-                        destination: AddNote(),
-                        label: {
-                            add_btn().padding(30)
-                        })
-                }
                 
                 
             }
-            
-            
             .navigationTitle("Notebook")
+            .navigationBarItems(trailing:
+                    NavigationLink(
+                        destination: AddNote(),
+                        label: {
+                            Image(systemName: "square.and.pencil")
+                        }))
         }
     }
 }

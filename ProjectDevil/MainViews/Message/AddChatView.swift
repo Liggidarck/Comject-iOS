@@ -11,16 +11,21 @@ struct AddChatView: View {
     var body: some View {
         ScrollView {
             VStack {
-                intemAddChat()
-                intemAddChat()
+                intemAddChatMe()
+                intemAddChatKate()
             }
             .navigationTitle("New Message")
+            .navigationBarItems(trailing:
+                NavigationLink( destination: AddChatView(),
+                    label: {
+                    Image(systemName: "magnifyingglass").imageScale(.large)
+                    }))
         }
         
     }
 }
 
-struct intemAddChat:View {
+struct intemAddChatMe:View {
     var body: some View {
         HStack {
             AvaNoBorder()
@@ -45,9 +50,33 @@ struct intemAddChat:View {
     }
 }
 
+struct intemAddChatKate:View {
+    var body: some View {
+        HStack {
+            AvaViewKate()
+                .frame(width: 55, height: 85, alignment: .center)
+                .padding(.horizontal, -15.0)
+                .padding(.vertical, -30.0)
+                .padding()
+            
+            VStack(alignment: .leading) {
+                Text("Kate Sheptukhina")
+                Text("@kate_sheee")
+                    .font(.caption2)
+                    .foregroundColor(.gray)
+                Divider()
+            }
+        
+            
+            Spacer()
+        }
+        .padding(.vertical, 4)
+        .padding(.leading, 5.0)
+    }
+}
+
 struct AddChatView_Previews: PreviewProvider {
     static var previews: some View {
         AddChatView()
-        intemAddChat()
     }
 }

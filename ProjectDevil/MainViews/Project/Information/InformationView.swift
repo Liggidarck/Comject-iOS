@@ -23,21 +23,21 @@ struct postTeather: View {
     var body: some View {
         VStack {
             HStack {
-                AvaNoBorder()
-                    .frame(width: 75, height: 75, alignment: .center)
-                    .padding(.horizontal, -30)
+                AvaViewAnton()
+                    .frame(width: 55, height: 75, alignment: .center)
+                    .padding(.horizontal, -20)
                     .padding(.top, -20)
                     .padding(.bottom, -30)
                     .padding()
                 
                 VStack(alignment: .leading) {
                     Text("Anton Rovenko")
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                     Text("@ant_cat")
                         .font(.caption2)
                         .foregroundColor(.gray)
                     
-                }
+                }.padding(.top, 7)
                 
                 Spacer()
             }.padding([.leading], 10)

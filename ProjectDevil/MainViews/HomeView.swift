@@ -73,13 +73,14 @@ struct buttons_card: View {
                 label: {
                     HStack(spacing: -10) {
                         Image(systemName: "square.and.arrow.up")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.secondary)
                             .padding(5)
                             .padding(.leading, 5)
                         Text("Publish")
                             .padding(.horizontal, 30.0)
                             .padding(.vertical, 10.0)
                             .font(.system(size: 14))
+                            .foregroundColor(.primary)
                     }.overlay(RoundedRectangle(cornerRadius: 3).stroke(Color.gray, lineWidth: 0.5))
                 })
             
@@ -90,15 +91,16 @@ struct buttons_card: View {
                 label: {
                     HStack(spacing: -10) {
                         Image(systemName: "pencil")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.secondary)
                             .padding(5)
                             .padding(.leading, 5)
                         Text("Edit Project")
                             .padding(.horizontal, 20)
                             .padding(.vertical, 10.0)
                             .font(.system(size: 14))
+                            .foregroundColor(.primary)
                     }.overlay(RoundedRectangle(cornerRadius: 3)
-                        .stroke(Color.gray, lineWidth: 0.5))
+                                .stroke(Color.gray, lineWidth: 0.5))
                 })
             
         }
@@ -113,23 +115,24 @@ struct likes_and_comment:View {
                 Image(systemName: "heart.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 25, height: 25, alignment: .center)
+                    .frame(width: 22, height: 22, alignment: .center)
                     .foregroundColor(.red)
                     
                 Text("591")
                     .font(.caption)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
             }
             
             HStack {
-                Image("chat")
+                Image(systemName: "message")
                     .resizable()
-                    .frame(width: 25, height: 25, alignment: .center)
+                    .frame(width: 22, height: 22, alignment: .center)
                     .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.secondary)
                 
                 Text("341 Comment")
                     .font(.caption)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
 
             }
             
@@ -142,7 +145,10 @@ struct likes_and_comment:View {
 #if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        Group {
+            HomeView()
+                .preferredColorScheme(.dark)
+        }
         MainProjectCard()
     }
 }
